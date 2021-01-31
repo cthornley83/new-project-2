@@ -81,3 +81,10 @@ width: 80vw;
 .image{
     margin-top:25px;
 }
+footer{
+
+    padding:20px;
+}
+footer li{
+    list-style: none;
+}
