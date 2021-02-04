@@ -10,27 +10,33 @@
     </head>
  <body>
    <div class="wrapper">
-    <header>
-        <div class="container">
-        <nav id="nav-bar">
-           <UL id="nav">
+    
+    <header class="main-header">
+         <nav id="nav-bar">
+           <UL id="header-ul">
                 <li id="name">Craig Thornley</li>
                  <li> <a href="index.html">HOME</a></li>
                  <li> <a href="#portfolio">PORTFOLIO</a></li>
                 <li> <a href="#contact"> CONTACT</a></li>
             </UL>
         </nav>
-          <div class="card">
+    
+    </header> 
+ 
+    <div class="profile-container">
+          <div class="card" id="pro-img">
                 <img id="profile-img" src="img/responsive-layout-profile.png" alt="profile image">
+          </div>
+              <div id="article-container">
                   <article id="article" class="card">
                     <p>Hi! I'm a front end web developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
                  </article>
+                </div>
              </div>
-            </div>
-     </header> 
+            
     <main>
-        <div class="container">
-       <div class="card">
+        <div class="main-container">
+       <div class="card" id="portfolio">
                 <h3>PORTFOLIO</h3>
                   <img src="img/portfolio-1.png" alt="marketing page image">
                     <h2>Marketing Page</h2>
@@ -63,7 +69,7 @@
         </div>
     </div>
     </main>
-    <div class="container">
+    <div class="bottom-container" id="contact">
           <footer>
                 <h2><strong>Contact</strong></h2>
                 <p>If your interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
@@ -74,7 +80,7 @@
                 <hr>
                 <div class="footer-nav ">
                     <ul>
-                        <li>craig thornley</li>
+                        <li><a href="#">craig thornley</a></li>
                         <li><a href="#">Back to Top</a></li>
                     </ul>
                 </div>
