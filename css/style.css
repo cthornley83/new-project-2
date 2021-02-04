@@ -189,28 +189,28 @@ hr{
 
 
   @media(min-width:764px){   
-    #header-ul{
-
-        flex-direction: row;
-    }
-    #name{
-
+  
+#name{
+       margin:10px 10px;
         min-width: 100%;
-      
-       
-     
-    }
+      }
     #header-ul{
+        flex-direction: row;
         max-width: 100%;
         flex-wrap: wrap;
-    
-    }
+      justify-content: center;
+     
+}
+a{
+
+}
 article p{
     padding:15% 10% 5%;
     font-size: 1.2rem;
 }
 
 .profile-container{
+   
   display: flex;
     padding:10px;
     flex-direction: row;
