@@ -201,12 +201,20 @@ hr{
       justify-content: center;
      
 }
+nav li{
+    background-color:transparent;
+}
 a{
 
 }
+#article {
+    min-width: 100%;
+}
 article p{
-    padding:15% 10% 5%;
+    padding:10px 10px;
     font-size: 1.2rem;
+    min-width: 100%;
+    margin:0;
 }
 
 .profile-container{
@@ -215,27 +223,51 @@ article p{
     padding:10px;
     flex-direction: row;
    max-width: 100%;
-  
-  
-   
- 
-
-}
+  }
 .article-container{
     display: flex;
-  
-   
-}
+    max-width: 50%;
+  }
 #pro-img{
   max-width: 50%; 
 
- 
-   
 }
 #profile-img{
     max-width: 90%;
   
     
+}
+/* main body card containers */
+#h3-heading{
+    align-self: center;
+   display: block;
+    min-width: 100vw;
+}
+.card h2{
+    min-width: 100%;
+
+}
+
+.main-container{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.card{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 50%;
+    align-content: center;
+    padding: 10px 25px;
+   
+}
+.main-container img{
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    justify-content: center;
 }
 
   }
