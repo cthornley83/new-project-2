@@ -186,11 +186,16 @@ hr{
     margin-top: 2rem;
     max-width: 90vw;
 }
+@media(max-width:767px){
+#nav-bar-footer{
+    display:none;
 
-
-  @media(min-width:764px){   
+}
+}
+  @media(min-width:768px){   
   
 #name{
+    padding-top:15px;
        margin:10px 10px;
         min-width: 100%;
       }
@@ -199,6 +204,7 @@ hr{
         max-width: 100%;
         flex-wrap: wrap;
       justify-content: center;
+      margin: 0 25%;
      
 }
 nav li{
@@ -238,15 +244,20 @@ article p{
 }
 #profile-img{
     max-width: 85%;
-  
-    
+  }
+
+  /* main body card containers */
+#portfolio-heading{
+    min-height: 100%;
+    margin: 0 30px;
+    padding: 25px  0;
 }
-/* main body card containers */
 #h3-heading{
    
    display: block;
-   min-width: 100vw;
+   min-width: 85vw;
     margin: 0 auto;
+    align-self: center;
 }
 main{
     margin:0;
@@ -255,7 +266,14 @@ main{
     min-width: 100%;
 
 }
+.card p{
+    
+    padding: 10px 55px;
+}
+.main-container p {
 
+    height: 50px;
+}
 .main-container{
     flex-direction: row;
     display: flex;
@@ -271,9 +289,7 @@ main{
     padding: 10px 0px;
    
 }
-.card p{
-    padding: 0 10px;
-}
+
 .main-container img{
     display: flex;
     flex-direction: row;
@@ -285,5 +301,47 @@ main{
     align-items: center;
     margin: 0 auto;
 }
+/* bottom container */
 
+.bottom-container p{
+
+    padding: 0 15%;
+    /* text-align:inherit; */
+}
+.footer-nav{
+  display: none;
+}
+
+  #nav-bar-footer{
+display: flex;
+ }
+
+#footer-ul{
+    display: flex;
+    width: 100vw;
+ }
+ 
+  #footer-name{
+margin-right: auto;
+  } 
+      
+      
+  }
+  @media(min-width: 1024px){
+      .main-container{
+          align-content: center;
+          min-width: 100%;
+          margin: 15px 15px;
+          
+      }
+
+    .card{
+        max-width: 32%;
+    }
+    body{
+        width: 100%;
+    }
+    #header-ul  {
+        flex-direction: row;
+    }
   }
