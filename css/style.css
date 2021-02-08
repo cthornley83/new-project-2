@@ -22,6 +22,11 @@ a{
     font-weight: 800;
     
 }
+ #header-ul li :hover{
+     background-color:white;
+    color:#350b40;
+    border-bottom:solid green 3px;
+}
 p{
     color:grey;
     font-weight: 400;
@@ -34,6 +39,7 @@ h2{
 color:#5f6769;
 font-size: 1.1rem;
 margin-top:1rem;
+font-family: 'Hammersmith One', sans-serif;
 
 }
 h3{
@@ -129,8 +135,11 @@ margin: 1rem auto ;
    width:100vw;
    margin:0  auto;
    padding:0;
+   background-color:#f8f1f1;
  }
- 
+ .main-container{
+     background-color:#f8f1f1;
+ }
  .card{
      width:100vw;
      margin:0rem ;
@@ -149,6 +158,20 @@ width: 85vw;
 margin:0 auto;
 
 }
+/* new secton  */
+#new-section{
+    display: flex;
+    flex-direction: column;
+}
+#skills{
+   
+}
+#skills img{
+  
+}
+
+
+/* footer section */
 footer{
     width:100vw;
    margin:0 auto;
@@ -178,6 +201,7 @@ footer p{
     margin:0;
   
 }
+
 .footer-nav{
     margin:0;
     padding: 0;
@@ -193,8 +217,72 @@ hr{
 }
 }
   @media(min-width:768px){   
-  
-#name{
+    
+    /* new secton  */
+#skills-h3-heading{
+    display: inline-block;
+    width:100%;
+    margin:0;
+    font-size: 1.4rem;
+   
+}
+#skills p{
+    color: black;
+     font-weight: 700;
+
+}
+ #sailing-card{
+     min-width:100vw;
+     
+ }
+ #sailing-card p{
+     height: 50px;
+     
+ }
+ #sailing-card img{
+    width: 30%;
+ }
+#new-section-wrapper{
+    background-color: white;
+    padding-top: 20px;
+    max-width:100vw;
+    display: flex;
+  flex-direction: row;
+ 
+}
+ #skills {
+    
+    display:flex;
+     max-width:100vw;  
+   
+}
+.card-new{
+    max-width: 50vw;
+   flex-wrap: wrap;
+   background-color: white;
+}
+#skills-h3-heading{
+    background-color: white;
+}
+#skill-div{
+    background-color: white;
+    padding-bottom: 20px;
+}
+#skills img{
+    max-height: 175px;
+    max-width:175px; 
+    border-radius: 50%; 
+   
+}
+#eng-img{
+    max-height: 220px;
+    max-width:200px; 
+ 
+    padding-bottom: 50px;
+}
+  /* end new section */
+
+  #name{
     padding-top:15px;
        margin:20px 0 0 0;
         min-width: 100%;
@@ -306,6 +394,11 @@ main{
 }
 
 /* bottom container */
+nav li a:hover{
+   
+    color:#350b40;
+    border-bottom:solid green 3px;
+}
 footer{
     padding-bottom:35px;
 }
@@ -339,12 +432,45 @@ footer{
 }
  
 @media(min-width: 1024px){
-      
-    body{
-          width: 100vw;
-          margin: 0 auto;
-      }
-    
+  /* new section */
+  #skills-h3-heading{
+    background-color: #f7f6e7;
+   
+  }
+
+  #skill-div{
+      padding:0;
+      background-color:#f7f6e7 ;
+      justify-content: center;
+  }
+  #new-section-wrapper{
+      padding-top: 15px;
+      background-color: #f7f6e7;
+   justify-content: center;
+  }
+  #card-new h2{
+      font-size: 1.3rem;
+  }
+  #skills .card-new{
+      background-color: snow;
+      border: solid lightgrey 2px;
+      border-radius: 10%;
+      max-width: 28vw;
+      margin: 0 15px 55px 15px;
+  }
+  #eng-img{
+      margin: 40px 0 0;
+      padding-bottom:15px;
+  }
+  #sailing-card img{
+      width: 120px;
+      height:120px;
+      margin: 20px 0 35px 0;
+  }
+  #sailing-card{
+    min-width:33vw;
+  }
+     
       .main-container{
           margin: 0 auto;
           justify-content: center;
