@@ -126,7 +126,7 @@ margin: 1rem auto ;
 /* MAIN BODY */
 .wrapper{
     text-align: center;
-   width:100%;
+   width:100vw;
    margin:0  auto;
    padding:0;
  }
@@ -196,10 +196,11 @@ hr{
   
 #name{
     padding-top:15px;
-       margin:10px 10px;
+       margin:20px 0 0 0;
         min-width: 100%;
       }
     #header-ul{
+        margin-top: 0;
         flex-direction: row;
         max-width: 100%;
         flex-wrap: wrap;
@@ -210,16 +211,14 @@ hr{
 nav li{
     background-color:transparent;
 }
-a{
 
-}
 #article {
     min-width: 100%;
     padding: 20px 0 0;
 }
 article p{
-  
-    font-size: 1.3rem;
+  padding-top:0;
+    font-size: 1rem;
    margin:0 auto;
    text-align: left;
    line-height: 2.2rem;
@@ -260,6 +259,7 @@ article p{
     align-self: center;
 }
 body{
+  
     max-width: 100vw;
     margin:0 auto;
 }
@@ -280,12 +280,13 @@ main{
     height: 50px;
 }
 .main-container{
-   
+    margin: 0 auto;
+   align-content: center;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     max-width: 90vw;
-    /* align-content: space-around; */
+    align-content: space-around;
 }
 .card{
     flex-direction: row;
@@ -305,7 +306,9 @@ main{
 }
 
 /* bottom container */
-
+footer{
+    padding-bottom:35px;
+}
 .bottom-container p{
 
     padding: 0 15%;
@@ -316,45 +319,52 @@ main{
 }
 
   #nav-bar-footer{
+      padding: 15px 25px 30px 20px;
+      background-color: #f6f5f5;
       max-width:100vw;
 }
-#footer-ul{
-   
-}
-
 #footer-ul li{
+    font-weight:900;
     display: inline-block;
     background-color:#f5f4f4 ;
-
-   
- }
+}
  nav li{
      margin: 10px 5px;
      float: right;
-     
- }
- 
+    }
   #footer-name{
-float: left;
+     float: left;
   } 
       
+}
+ 
+@media(min-width: 1024px){
       
-  }
-  @media(min-width: 1024px){
-      .main-container{
-          align-content: center;
-          min-width: 100%;
-          margin: 15px 15px;
-          
+    body{
+          width: 100vw;
+          margin: 0 auto;
       }
+    
+      .main-container{
+          margin: 0 auto;
+          justify-content: center;
+          min-width: 100vw;
+     }
 
     .card{
         max-width: 32%;
     }
-    body{
-        width: 100%;
+    #header-ul{
+        padding: 25px 30px 5px 42px;
+        display: inline-block;
+        width: 100vw;
     }
-    #header-ul  {
-        flex-direction: row;
+   #header-ul li{
+       
+       display: inline-block;
+   }
+#name  {
+       min-width: 15vw;
+       float: left;
     }
   }
