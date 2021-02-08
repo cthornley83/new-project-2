@@ -27,7 +27,7 @@ p{
     font-weight: 400;
     max-width: 75vw;
     margin:0 auto 2.5rem;
-    padding:0.5 0 1.5rem;
+    padding:0.5rem 0 1.5rem;
     font-size: 0.9rem;
 }
 h2{
@@ -366,5 +366,7 @@ footer{
 #name  {
        min-width: 15vw;
        float: left;
+       padding-bottom: 20px;
+       margin-top:0;
     }
   }
